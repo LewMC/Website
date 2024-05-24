@@ -35,7 +35,9 @@
                     <p><strong>Downloads</strong></p>
                 </div>
             </div>
-            <br><br>
+            <br><hr><br>
+            <h2>Take a look around!</h2>
+            <br>
             <div class="grid md:grid-cols-2 gap-2">
                 <a href="/modpack" class="card-link">
                     Modpacks
