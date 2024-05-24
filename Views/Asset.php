@@ -30,16 +30,17 @@
             </div>
         </header>
 
+        <nav class="asset-nav">
+            <button id="overview-btn" class="asset-nav-btn-active asset-nav-btn" onclick="toggleTab('overview')">Overview</button>
+            <button id="download-btn" class="asset-nav-btn" onclick="toggleTab('download')">Download</button>
+            <a class="asset-nav-btn" href="https://wiki.lewmc.net/index.php/Category:Kryptonite" target="_blank">
+                Wiki
+                <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+            </a>
+            <button id="license-btn" class="asset-nav-btn" onclick="toggleTab('license')">License</button>
+        </nav>
+
         <main class="padding">
-            <nav class="pb-10 asset-nav">
-                <button id="overview-btn" class="asset-nav-btn-active asset-nav-btn" onclick="toggleTab('overview')">Overview</button>
-                <button id="download-btn" class="asset-nav-btn" onclick="toggleTab('download')">Download</button>
-                <a class="asset-nav-btn" href="https://wiki.lewmc.net/index.php/Category:Kryptonite" target="_blank">
-                    Wiki
-                    <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
-                </a>
-                <button id="license-btn" class="asset-nav-btn" onclick="toggleTab('license')">License</button>
-            </nav>
 
             <div id="overview" class="">
                 <p class="py-2" id="body">
