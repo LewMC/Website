@@ -35,7 +35,7 @@
                     <p><strong>Downloads</strong></p>
                 </div>
             </div>
-            <br><hr><br>
+            <br><br><br>
             <h2>Take a look around!</h2>
             <br>
             <div class="grid md:grid-cols-2 gap-2">
