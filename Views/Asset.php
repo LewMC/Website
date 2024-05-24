@@ -25,7 +25,7 @@
                 <img src="<?= $asset->icon; ?>" alt="<?= $asset->name; ?>" class="w-32">
                 <div class="pt-2">
                     <h1 class="text-size-lg"><?= $asset->name; ?></h1>
-                    <p class="self-center pt-2">Minecraft 1.20.0 - 1.20.6</p>
+                    <p class="self-center pt-2">Minecraft <span id="versions"></p>
                 </div>
             </div>
         </header>
@@ -97,7 +97,9 @@
         </main>
         <script src="/Assets/JS/Asset.js"></script>
         <script>
-            callAPI('<?= $asset->main_remote; ?>?description=<?= $asset->remote_id->$main_remote; ?>');
+            <?php if ($asset->main_remote == 'modrinth') { ?>
+            getModrinthDescription('<?= $asset->remote_id->modrinth; ?>');
+            <?php } ?>
         </script>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
     </body>
