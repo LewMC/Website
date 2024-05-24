@@ -2,12 +2,17 @@
     $assetURL = explode('/', $_SERVER['REQUEST_URI'])[2];
     $asset = json_decode(file_get_contents(__DIR__ . "/../Assets.json"))->$assetURL;
     var_dump($assetURL, $asset);
+
+    if ($asset == null) {
+        header('Location: /404');
+        exit;
+    }
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
         <?php require __DIR__ . '/Common/Head.php'; ?>
 
-        <title>Kryptonite - LewMC Plugins</title>
+        <title><?= $asset->name; ?> - LewMC <?= $asset->type; ?></title>
     </head>
     <body>
         <?php require __DIR__ . '/Common/Nav.php'; ?>
@@ -16,9 +21,9 @@
                 <img src="/Assets/Images/pixels.webp" class="h-48 w-full object-cover" alt="Banner Image">
             </div>
             <div class="flex space-x-8 padding">
-                <img src="https://hangarcdn.papermc.io/avatars/project/2046.webp?v=2" alt="Minecraft" class="w-32">
+                <img src="<?= $asset->icon; ?>" alt="<?= $asset->name; ?>" class="w-32">
                 <div class="pt-2">
-                    <h1 class="text-size-lg">Kryptonite</h1>
+                    <h1 class="text-size-lg"><?= $asset->name; ?></h1>
                     <p class="self-center pt-2">Minecraft 1.20.0 - 1.20.6</p>
                 </div>
             </div>
