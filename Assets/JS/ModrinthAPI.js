@@ -12,7 +12,7 @@ function getModrinthDescription(asset) {
 
 function getModrinthVersions(asset) {
     if (fetchedVersions === false) {
-        fetch('https://api.modrinth.com/v2/project/' + asset + '/version')
+        fetch('/api/modrinth?versions='+ asset)
             .then((response) => response.text())
             .then((result) => {
                 let json = JSON.parse(result);
