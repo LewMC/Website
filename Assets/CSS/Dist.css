@@ -1060,3 +1060,9 @@ h4, h5, h6 {
   line-height: 1.75rem;
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
