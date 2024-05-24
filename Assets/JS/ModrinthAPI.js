@@ -21,12 +21,15 @@ function getModrinthVersions(asset) {
                 fetchedVersions = true;
                 let versionsGrid = '';
                 for (let version in json) {
-                    console.log(json[version]);
+                    let foundFirstRelease = false;
                     if (json[version].status === "listed") {
                         if (json[version].version_type === "beta") {
                             versionsGrid += `<a target="_blank" href="https://modrinth.com/plugin/${asset}/version/${json[version].version_number}" class="card-link relative" id="${json[version].version_number}"><h3>${json[version].name}</h3><p>For Minecraft ${json[version].game_versions[0]} - ${json[version].game_versions[json[version].game_versions.length - 1]}</p><span class="absolute top-0 right-0 bg-yellow-500 rounded-bl-md px-1 text-black">SNAPSHOT</span></a>`;
+                        } else if (json[version].version_type === "release" && !foundFirstRelease) {
+                            versionsGrid += `<a target="_blank" href="https://modrinth.com/plugin/${asset}/version/${json[version].version_number}" class="card-link relative" id="${json[version].version_number}"><h3>${json[version].name}</h3><p>For Minecraft ${json[version].game_versions[0]} - ${json[version].game_versions[json[version].game_versions.length - 1]}</p><span class="absolute top-0 right-0 bg-green-500 rounded-bl-md px-1 text-black">RECOMMENDED</span></a>`;
+                            foundFirstRelease = true;
                         } else {
-                            versionsGrid += `<a target="_blank" href="https://modrinth.com/plugin/${asset}/version/${json[version].version_number}" class="card-link" id="${json[version].version_number}"><h3>${json[version].name}</h3><p>For Minecraft ${json[version].game_versions[0]} - ${json[version].game_versions[json[version].game_versions.length - 1]}</p></a>`;
+                            versionsGrid += `<a target="_blank" href="https://modrinth.com/plugin/${asset}/version/${json[version].version_number}" class="card-link relative" id="${json[version].version_number}"><h3>${json[version].name}</h3><p>For Minecraft ${json[version].game_versions[0]} - ${json[version].game_versions[json[version].game_versions.length - 1]}</p></a>`;
                         }
                     }
                 }
