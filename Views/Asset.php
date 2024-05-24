@@ -1,7 +1,7 @@
 <?php
-    $asset = explode($_SERVER['REQUEST_URI'], '/')[1];
-    $asset = json_decode(file_get_contents("/Assets.json"))->$asset;
-    var_dump($asset);
+    $assetURL = explode($_SERVER['REQUEST_URI'], '/')[1];
+    $asset = json_decode(file_get_contents("/Assets.json"))->$assetURL;
+    var_dump($assetURL,$asset);
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
