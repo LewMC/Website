@@ -4,7 +4,7 @@ if (isset($_GET['download-count'])) {
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://service.lewmc.net/download-counter?resource='.htmlspecialchars($_GET['download-count']),
+        CURLOPT_URL => 'https://service.lewmc.net/download-counter?format=true&resource='.htmlspecialchars($_GET['download-count']),
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,

@@ -1,5 +1,5 @@
 function getDownloadCount(asset, id) {
-    fetch('/api/lewmc?format=true&download-count='+ asset)
+    fetch('/api/lewmc?download-count='+ asset)
         .then((response) => response.text())
         .then((result) => {
             let json = JSON.parse(result);
