@@ -15,8 +15,8 @@ const markdownToHTML = (text) => {
     // Convert headings
     const headingPattern = /^(#{1,6})\s+(.*)$/gm;
     text = text.replace(headingPattern, (match, hashes, content) => {
-        const level = hashes.length - 1; // Adjust heading level
-        return `<h${Math.min(level, 3)}>${content}</h${Math.min(level, 3)}>`; // Ensure maximum heading level is h3
+        const level = Math.min(Math.max(hashes.length + 2, 3), 6); // Adjust heading level between 3 and 6
+        return `<h${level}>${content}</h${level}>`;
     });
 
     // Convert bold text
