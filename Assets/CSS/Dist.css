@@ -911,6 +911,7 @@ nav {
 }
 
 .asset-nav-btn {
+  text-align: center;
   align-self: center;
   padding-left: 0.5rem;
   padding-right: 0.5rem;

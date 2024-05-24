@@ -18,7 +18,7 @@
     <body>
         <?php require __DIR__ . '/Common/Nav.php'; ?>
         <header>
-            <div class="heading">
+            <div>
                 <img src="/Assets/Images/pixels.webp" class="h-48 w-full object-cover" alt="Banner Image">
             </div>
             <div class="flex space-x-8 padding">
