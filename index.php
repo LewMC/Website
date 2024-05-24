@@ -25,6 +25,8 @@ $Router->route('/plugin/kryptonite', '/Views/Asset.php');
 $Router->route('/modpack', '/Views/Assets.php');
 $Router->route('/modpack/galactica', '/Views/Asset.php');
 $Router->route('/modpack/lews-jurassic-pack', '/Views/Asset.php');
+$Router->route('/modpack/lews-client-pack', '/Views/Asset.php');
+$Router->route('/modpack/simplyaesthetic', '/Views/Asset.php');
 
 // Mods
 $Router->route('/mod', '/Views/Assets.php');

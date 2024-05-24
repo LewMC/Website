@@ -32,9 +32,27 @@
     "name": "Lew's Jurassic Pack",
     "type": "Modpacks",
     "remote_id": {
-      "curseforge": "?"
+      "curseforge": "441198"
     },
     "main_remote": "curseforge",
     "wiki_category": "Lew%27s_Jurassic_Pack"
+  },
+  "lews-client-pack": {
+    "name": "Lew's Client Pack",
+    "type": "Modpacks",
+    "remote_id": {
+      "curseforge": "921642"
+    },
+    "main_remote": "curseforge",
+    "wiki_category": "Modpacks"
+  },
+  "simpleaesthetic": {
+    "name": "SimplyAesthetic",
+    "type": "Modpacks",
+    "remote_id": {
+      "curseforge": "445030"
+    },
+    "main_remote": "curseforge",
+    "wiki_category": "Modpacks"
   }
 }
