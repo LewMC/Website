@@ -9,18 +9,14 @@
     </head>
     <body>
     <?php require __DIR__ . '/Common/Nav.php'; ?>
-        <header>
-            <div>
-                <img src="/Assets/Images/pixels.webp" class="h-48 w-full object-cover" alt="Banner Image">
-            </div>
-            <div class="flex space-x-8 padding">
-                <div class="pt-2 text-center">
-                    <h1>Welcome to LewMC</h1>
-                </div>
-            </div>
-        </header>
 
-        <main class="padding">
+        <main
+            class="padding bg-cover bg-no-repeat bg-center"
+            style="background-image: url('/Assets/Images/pixels.webp');"
+        >
+            <div class="card">
+                <h1>Welcome to LewMC</h1>
+            </div>
             <div class="grid md:grid-cols-3 gap-2">
                 <div class="card">
                     <h2>4</h2>
@@ -36,8 +32,6 @@
                 </div>
             </div>
             <br><br><br>
-            <h2>Take a look around!</h2>
-            <br>
             <div class="grid md:grid-cols-2 gap-2">
                 <a href="/modpack" class="card-link">
                     Modpacks

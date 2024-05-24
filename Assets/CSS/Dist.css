@@ -645,6 +645,18 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -666,10 +678,6 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .italic {
