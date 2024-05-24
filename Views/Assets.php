@@ -42,7 +42,7 @@ if ($assets == null) {
                             <h3><?= $asset->name; ?></h3>
                             <span id="<?= $slug; ?>-downloads"></span> Downloads
                         </a>
-                        <script>getDownloadCount(<?= $slug; ?>);</script>
+                        <script>getDownloadCount('<?= $slug; ?>');</script>
                     <?php }
                 } ?>
             </div>
