@@ -26,7 +26,7 @@
                 <div class="pt-2">
                     <h1><?= $asset->name; ?></h1>
                     <p class="self-center pt-2">Minecraft <span id="versions"><i class="fa-solid fa-spinner fa-spin-pulse"></i></p>
-                    <p class="self-center pt-2"><span id="downloads"><i class="fa-solid fa-spinner fa-spin-pulse"></i> Downloads</p>
+                    <p class="self-center pt-2"><span id="downloads"><i class="fa-solid fa-spinner fa-spin-pulse"></i></span> Downloads</p>
                 </div>
             </div>
         </header>
