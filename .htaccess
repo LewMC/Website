@@ -6,6 +6,7 @@ Redirect /lews-jurassic-pack /modpack/lews-jurassic-pack
 Redirect /lews-jurassic-pack/update /modpack/lews-jurassic-pack/update
 Redirect /downloads/lews-jurassic-pack/update /modpack/lews-jurassic-pack/update
 
+Redirect /lews-client-pack /discontinued
 Redirect /simplyaesthetic /discontinued
 Redirect /simplyaesthetic/update /discontinued
 Redirect /downloads/simplyaesthetic/update /discontinued
@@ -20,7 +21,6 @@ Redirect /servers /server
 
 Redirect /essence /plugin/essence
 Redirect /kryptonite /plugin/kryptonite
-Redirect /Kryptonite /plugin/kryptonite
 
 <FilesMatch "\.(?i:gif|jpe?g|png|webp|ico|css|js|swf|woff2|ttf)$">
 
