@@ -43,7 +43,7 @@ if ($assets == null) {
                         ?>
                         <a href="<?= $url; ?>/<?= $slug; ?>" class="card-link">
                             <h3><?= $asset->name; ?></h3>
-                            <span id="<?= $slug; ?>-downloads"> Downloads
+                            <span id="<?= $slug; ?>-downloads"><i class="fa-solid fa-spinner fa-spin-pulse"></i></span> Downloads
                         </a>
                         <script>getDownloadCount('<?= $slug; ?>','<?= $slug; ?>-downloads')</script>
                     <?php }
