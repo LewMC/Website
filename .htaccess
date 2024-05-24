@@ -1,4 +1,12 @@
-RewriteEngine on
+<FilesMatch "\.(?i:gif|jpe?g|png|webp|ico|css|js|swf|woff2|ttf)$">
 
-RewriteCond %{DOCUMENT_ROOT} !-f
-RewriteRule !\.(webp|css|js)$ index.php [QSA,L]
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=1209600, public, must-revalidate"
+  </IfModule>
+
+</FilesMatch>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
