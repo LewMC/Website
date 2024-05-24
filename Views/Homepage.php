@@ -34,12 +34,21 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-2">
+                <div class="card-link col-span-2 text-center">
+                    What we do
+                </div>
                 <a href="/modpack" class="card-link">
                     Modpacks
                 </a>
                 <a href="/plugin" class="card-link">
                     Plugins
                 </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-2">
+                <div class="card-link col-span-2 text-center">
+                    Join our Community
+                </div>
                 <a href="/news" class="card-link">
                     News
                 </a>
