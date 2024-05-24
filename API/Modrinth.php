@@ -22,7 +22,7 @@ if (isset($_GET['description'])) {
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://api.modrinth.com/v2/project/'.htmlspecialchars($_GET['description']).'/version',
+        CURLOPT_URL => 'https://api.modrinth.com/v2/project/'.htmlspecialchars($_GET['versions']).'/version',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
