@@ -58,16 +58,21 @@
             </div>
         </main>
         <script src="/Assets/JS/ModrinthAPI.js"></script>
+        <script src="/Assets/JS/CurseForgeAPI.js"></script>
         <script src="/Assets/JS/Converters.js"></script>
         <script src="/Assets/JS/Tab.js"></script>
         <script>
             <?php if ($asset->main_remote == 'modrinth') { ?>
             getModrinthDescription('<?= $asset->remote_id->modrinth; ?>');
+            <?php } elseif ($asset->main_remote == 'curseforge') { ?>
+            getCurseForgeDescription('<?= $asset->remote_id->curseforge; ?>');
             <?php } ?>
 
             function getVersions() {
                 <?php if ($asset->main_remote == 'modrinth') { ?>
                 getModrinthVersions('<?= $asset->remote_id->modrinth; ?>');
+                <?php } elseif ($asset->main_remote == 'curseforge') { ?>
+                getCurseForgeVersions('<?= $asset->remote_id->curseforge; ?>');
                 <?php } ?>
             }
         </script>
