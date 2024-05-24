@@ -82,7 +82,7 @@
                 <?php } ?>
             }
 
-            getDownloadCount('<?= $asset; ?>','downloads')
+            getDownloadCount('<?= $assetURL; ?>','downloads')
         </script>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
     </body>
