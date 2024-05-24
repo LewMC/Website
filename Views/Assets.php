@@ -38,6 +38,7 @@ if ($assets == null) {
                 <?php foreach ($assets as $slug => $asset) {
                     if ($asset->type == $asset_type) {
                         $downloads = json_decode(file_get_contents('https://service.lewmc.net/download-counter?resource='.$slug));
+                        var_dump($downloads);
                         ?>
                         <a href="<?= $url; ?>/<?= $slug; ?>" class="card-link">
                             <h3><?= $asset->name; ?></h3>
