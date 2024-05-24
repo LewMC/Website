@@ -11,6 +11,10 @@ function getModrinthDescription(asset) {
         .catch((error) => console.error(error));
 }
 
+/*
+ *   DISCLAIMER: The below function was written using AI.
+ *   I don't understand regex :(
+ */
 const markdownToHTML = (text) => {
     // Convert headings
     const headingPattern = /^(#{1,6})\s+(.*)$/gm;
@@ -26,6 +30,10 @@ const markdownToHTML = (text) => {
     // Convert italic text
     const italicPattern = /__(.*?)__/g;
     text = text.replace(italicPattern, '<em>$1</em>');
+
+    // Convert links with class link-inline
+    const linkPattern = /\[(.*?)\]\((.*?)\)/g;
+    text = text.replace(linkPattern, '<a href="$2" class="link-inline">$1</a>');
 
     // Convert bullet points
     const bulletPattern = /^\* (.*)$/gm;
