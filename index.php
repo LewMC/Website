@@ -35,6 +35,7 @@ $Router->route('/server', '/Views/Assets.php');
 // API
 $Router->route('/api/modrinth', '/API/Modrinth.php');
 $Router->route('/api/curseforge', '/API/CurseForge.php');
+$Router->route('/api/lewmc', '/API/LewMC.php');
 
 // Other
 $Router->route('/', '/Views/Homepage.php');

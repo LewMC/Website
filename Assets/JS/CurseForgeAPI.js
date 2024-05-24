@@ -25,7 +25,6 @@ function getCurseForgeVersions(asset, displayName) {
             .then((response) => response.text())
             .then((result) => {
                 let json = JSON.parse(result);
-                console.log(json);
                 fetchedVersions = true;
                 let versionsGrid = '';
                 let foundFirstRelease = false;

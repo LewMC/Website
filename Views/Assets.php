@@ -19,6 +19,8 @@ if ($assets == null) {
     <head>
         <?php require __DIR__ . '/Common/Head.php'; ?>
 
+        <script src="/Assets/JS/LewMCAPI.js"></script>
+
         <title><?= $asset_type; ?> - LewMC</title>
     </head>
     <body>
@@ -38,12 +40,12 @@ if ($assets == null) {
             <div class="grid gap-2">
                 <?php foreach ($assets as $slug => $asset) {
                     if ($asset->type == $asset_type) {
-                        $downloads = json_decode(file_get_contents('https://service.lewmc.net/download-counter?resource='.$slug));
                         ?>
                         <a href="<?= $url; ?>/<?= $slug; ?>" class="card-link">
                             <h3><?= $asset->name; ?></h3>
-                            <?= $downloads->data->total; ?> Downloads
+                            <span id="<?= $slug; ?>-downloads"> Downloads
                         </a>
+                        <script>getDownloadCount('<?= $slug; ?>','<?= $slug; ?>-downloads')</script>
                     <?php }
                 } ?>
             </div>
