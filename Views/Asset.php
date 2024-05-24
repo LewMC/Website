@@ -66,6 +66,7 @@
             <?php if ($asset->main_remote == 'modrinth') { ?>
             getModrinthDescription('<?= $asset->remote_id->modrinth; ?>');
             <?php } elseif ($asset->main_remote == 'curseforge') { ?>
+            getCurseForgeOverview('<?= $asset->remote_id->curseforge; ?>');
             getCurseForgeDescription('<?= $asset->remote_id->curseforge; ?>');
             <?php } ?>
 
