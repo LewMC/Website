@@ -47,28 +47,7 @@
                 </p>
             </div>
 
-            <div id="download" class="hidden">
-                <h3 class="text-size-sm pt-4 pb-2">Plugin</h3>
-                <p class="py-2">
-                    The plugin can be installed on any Spigot supported servers such as SpigotMC, PaperMC, etc.
-                </p>
-                <br>
-
-                <div class="grid grid-cols-2 gap-4">
-                    <a class="btn text-black" href="https://modrinth.com/plugin/kryptonite">
-                        Download from Modrinth
-                    </a>
-                </div>
-                <br>
-                <div class="grid grid-cols-2 gap-4">
-                    <a class="btn text-black" href="https://github.com/lewmilburn/kryptonite">
-                        Download source code from GitHub
-                    </a>
-                    <a class="btn text-black" href="https://wiki.lewmc.net/index.php/Download_Kryptonite">
-                        Learn how to compile snapshot version
-                    </a>
-                </div>
-                <br>
+            <div id="download" class="hidden grid gap-2">
             </div>
 
             <div id="license" class="hidden">

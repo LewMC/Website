@@ -19,9 +19,12 @@ function getModrinthVersions(asset) {
             .then((result) => {
                 let json = JSON.parse(result);
                 fetchedVersions = true;
+                let versionsGrid = '';
                 for (let version in json) {
                     console.log(json[version]);
+                    versionsGrid += `<p>${items[i]}</p>`;
                 }
+                document.getElementById('download').innerHTML = versionsGrid;
             })
             .catch((error) => console.error(error));
     }
