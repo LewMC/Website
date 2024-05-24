@@ -24,7 +24,7 @@
             <div class="flex space-x-8 padding">
                 <img src="" alt="<?= $asset->name; ?>" class="w-32" id="icon">
                 <div class="pt-2">
-                    <h1 class="text-size-lg"><?= $asset->name; ?></h1>
+                    <h1"><?= $asset->name; ?></h1>
                     <p class="self-center pt-2">Minecraft <span id="versions"></p>
                 </div>
             </div>

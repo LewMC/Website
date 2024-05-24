@@ -28,7 +28,7 @@ if ($assets == null) {
             </div>
             <div class="flex space-x-8 padding">
                 <div class="pt-2">
-                    <h1 class="text-size-lg"><?= $asset_type; ?></h1>
+                    <h1><?= $asset_type; ?></h1>
                 </div>
             </div>
         </header>
