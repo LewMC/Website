@@ -74,7 +74,7 @@
                 <?php if ($asset->main_remote == 'modrinth') { ?>
                 getModrinthVersions('<?= $asset->remote_id->modrinth; ?>');
                 <?php } elseif ($asset->main_remote == 'curseforge') { ?>
-                getCurseForgeVersions('<?= $asset->remote_id->curseforge; ?>');
+                getCurseForgeVersions('<?= $asset->remote_id->curseforge; ?>','<?= $asset->name; ?>');
                 <?php } ?>
             }
         </script>
