@@ -23,6 +23,7 @@ h1 { @apply text-4xl lg:text-5xl font-bold; }
 h2 { @apply text-3xl lg:text-4xl heading; }
 h3 { @apply text-2xl lg:text-3xl heading; }
 h4, h5, h6 { @apply text-xl lg:text-2xl heading; }
-p { @apply py-1; }
+p { @apply pt-2; }
 
-.heading { @apply font-bold pb-2 py-6; }
+.heading { @apply font-bold; }
+.ph { @apply pb-1 py-6; }

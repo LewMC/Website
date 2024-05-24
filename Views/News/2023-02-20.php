@@ -23,7 +23,7 @@
                 Hi everyone, we're changing how we distribute Galactica and what we include in our distributions to make
                 the development and player experience better.
             </p>
-            <h2>Discontinuing Technic Launcher Support</h2>
+            <h2 class="ph">Discontinuing Technic Launcher Support</h2>
             <p>
                 We originally launched our modpack on the Technic Launcher for the world to play, unfortunately with
                 great sadness we're today announcing that we're no longer going to be distributing Galactica on this
@@ -44,7 +44,7 @@
                 removing Galactica from Technic, but we'll no longer be updating it there. You'll still be able to
                 download old versions of Galactica in the Technic format on the Technic Launcher and our Files API.
             </p>
-            <h2>Discontinuing galactica.cfg and server.png</h2>
+            <h2 class="ph">Discontinuing galactica.cfg and server.png</h2>
             <p>
                 We're also discontinuing our distribution of the galactica.cfg and server.png files.
             </p>
