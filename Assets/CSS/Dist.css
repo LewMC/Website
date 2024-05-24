@@ -598,6 +598,10 @@ video {
   height: 12rem;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -1114,6 +1118,12 @@ p {
   padding-bottom: 0.25rem;
 }
 
+@media (min-width: 640px) {
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1121,5 +1131,15 @@ p {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:gap-16 {
+    gap: 4rem;
   }
 }

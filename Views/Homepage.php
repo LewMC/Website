@@ -11,12 +11,13 @@
     <?php require __DIR__ . '/Common/Nav.php'; ?>
 
         <main
-            class="padding bg-cover bg-no-repeat bg-center"
+            class="padding bg-cover bg-no-repeat bg-center grid gap-2 sm:gap-4 md:gap-8 lg:gap-16 min-h-screen"
             style="background-image: url('/Assets/Images/pixels.webp');"
         >
             <div class="card">
                 <h1>Welcome to LewMC</h1>
             </div>
+
             <div class="grid md:grid-cols-3 gap-2">
                 <div class="card">
                     <h2>4</h2>
@@ -31,7 +32,7 @@
                     <p><strong>Downloads</strong></p>
                 </div>
             </div>
-            <br><br><br>
+
             <div class="grid md:grid-cols-2 gap-2">
                 <a href="/modpack" class="card-link">
                     Modpacks
