@@ -1,3 +1,27 @@
+Redirect /galactica /modpack/galactica
+Redirect /galactica/update /modpack/galactica/update
+Redirect /downloads/galactica/update /modpack/galactica/update
+
+Redirect /lews-jurassic-pack /modpack/lews-jurassic-pack
+Redirect /lews-jurassic-pack/update /modpack/lews-jurassic-pack/update
+Redirect /downloads/lews-jurassic-pack/update /modpack/lews-jurassic-pack/update
+
+Redirect /simplyaesthetic /discontinued
+Redirect /simplyaesthetic/update /discontinued
+Redirect /downloads/simplyaesthetic/update /discontinued
+
+Redirect /ram https://wiki.lewmc.net/index.php?title=Allocating_RAM
+Redirect /logs https://wiki.lewmc.net/index.php?title=Logs
+
+Redirect /mods /mod
+Redirect /modpacks /modpack
+Redirect /plugins /plugin
+Redirect /servers /server
+
+Redirect /essence /plugin/essence
+Redirect /kryptonite /plugin/kryptonite
+Redirect /Kryptonite /plugin/kryptonite
+
 <FilesMatch "\.(?i:gif|jpe?g|png|webp|ico|css|js|swf|woff2|ttf)$">
 
   <IfModule mod_headers.c>

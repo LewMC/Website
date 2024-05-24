@@ -21,8 +21,17 @@ $Router->route('/modpack', '/Views/Assets.php');
 $Router->route('/modpack/galactica', '/Views/Asset.php');
 $Router->route('/modpack/lews-jurassic-pack', '/Views/Asset.php');
 
+// Mods
+$Router->route('/mod', '/Views/Assets.php');
+
+// Servers
+$Router->route('/server', '/Views/Assets.php');
+
 // API
 $Router->route('/api/hangar', '/API/Hangar.php');
 $Router->route('/api/modrinth', '/API/Modrinth.php');
+
+// Other
+$Router->route('/discontinued', '/Views/Discontinued.php');
 
 echo 'Error 404';
