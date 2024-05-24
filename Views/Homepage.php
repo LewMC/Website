@@ -10,10 +10,9 @@
         <header>
             <div>
                 <img src="/Assets/Images/pixels.webp" class="h-48 w-full object-cover" alt="Banner Image">
-                <h1>Welcome to LewMC</h1>
             </div>
             <div class="flex space-x-8 padding">
-                <div class="pt-2">
+                <div class="pt-2 text-center">
                     <h1>Welcome to LewMC</h1>
                 </div>
             </div>
