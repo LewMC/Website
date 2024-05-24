@@ -31,6 +31,10 @@ const markdownToHTML = (text) => {
     const italicPattern = /__(.*?)__/g;
     text = text.replace(italicPattern, '<em>$1</em>');
 
+    // Convert images
+    const imagePattern = /!\[(.*?)\]\((.*?)\)/g;
+    text = text.replace(imagePattern, '<img src="$2" alt="$1">');
+
     // Convert links with class link-inline
     const linkPattern = /\[(.*?)\]\((.*?)\)/g;
     text = text.replace(linkPattern, '<a href="$2" class="link-inline">$1</a>');
