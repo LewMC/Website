@@ -16,6 +16,7 @@ nav { @apply bg-black padding-x flex space-x-8 text-white; }
 .link-inline { @apply underline hover:text-blue-500 transition duration-200; }
 
 .card { @apply px-4 py-3 bg-black; }
+.card-link { @apply px-4 py-3 bg-black hover:bg-neutral-900 transition duration-200; }
 
 body { @apply text-lg; }
 h3 { @apply text-2xl font-bold; }
