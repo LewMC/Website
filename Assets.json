@@ -16,5 +16,21 @@
       "hangar": "kryptonite"
     },
     "main_remote": "modrinth"
+  },
+  "galactica": {
+    "name": "Galactica",
+    "type": "Modpacks",
+    "remote_id": {
+      "curseforge": "?"
+    },
+    "main_remote": "curseforge"
+  },
+  "lews-jurassic-pack": {
+    "name": "Lew's Jurassic Pack",
+    "type": "Modpacks",
+    "remote_id": {
+      "curseforge": "?"
+    },
+    "main_remote": "curseforge"
   }
 }

@@ -16,6 +16,11 @@ $Router->route('/plugin', '/Views/Assets.php');
 $Router->route('/plugin/essence', '/Views/Asset.php');
 $Router->route('/plugin/kryptonite', '/Views/Asset.php');
 
+// Modpacks
+$Router->route('/modpack', '/Views/Assets.php');
+$Router->route('/modpack/galactica', '/Views/Asset.php');
+$Router->route('/modpack/lews-jurassic-pack', '/Views/Asset.php');
+
 // API
 $Router->route('/api/hangar', '/API/Hangar.php');
 $Router->route('/api/modrinth', '/API/Modrinth.php');
