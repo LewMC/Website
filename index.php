@@ -39,13 +39,14 @@ $Router->route('/api/modrinth', '/API/Modrinth.php');
 $Router->route('/api/curseforge', '/API/CurseForge.php');
 $Router->route('/api/lewmc', '/API/LewMC.php');
 
+// News
+$Router->route('/news', '/Views/News.php');
+$Router->route('/news/2024-05-24-thank-you-for-10000-downloads/', '/Views/News/2024-05-24.php');
+$Router->route('/news/2023-02-20-galactica-distribution-update/', '/Views/News/2023-02-20.php');
+$Router->route('/news/2023-02-17-galactica-community-server-lag-updates/', '/Views/News/2023-02-17.php');
+
 // Other
 $Router->route('/', '/Views/Homepage.php');
 $Router->route('/discontinued', '/Views/Discontinued.php');
-
-// News
-$Router->route('/news/2024-05-24-thank-you-for-10000-downloads/', '/News/2024-05-24.php');
-$Router->route('/news/2023-02-20-galactica-distribution-update/', '/News/2023-02-20.php');
-$Router->route('/news/2023-02-17-galactica-community-server-lag-updates/', '/News/2023-02-17.php');
 
 echo 'Error 404';
