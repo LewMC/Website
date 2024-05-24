@@ -1,5 +1,5 @@
 <?php
-    $assetURL = explode('/', $_SERVER['REQUEST_URI'])[1];
+    $assetURL = explode('/', $_SERVER['REQUEST_URI'])[2];
     $asset = json_decode(file_get_contents("/Assets.json"))->$assetURL;
     var_dump($assetURL,$asset);
 ?><!DOCTYPE html>
