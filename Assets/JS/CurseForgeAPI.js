@@ -19,7 +19,7 @@ function getCurseForgeDescription(asset) {
         .catch((error) => console.error(error));
 }
 
-function getCurseForgeVersions(asset) {
+function getCurseForgeVersions(asset, displayName) {
     if (fetchedVersions === false) {
         fetch('/api/curseforge?versions='+ asset)
             .then((response) => response.text())
@@ -31,7 +31,7 @@ function getCurseForgeVersions(asset) {
                 let foundFirstRelease = false;
                 for (let version in json.data) {
                     if (json.data[version].fileStatus === 4) {
-                        versionsGrid += `<a target="_blank" href="https://curseforge.com/minecraft/modpack/${asset}/files/${json.data[version].id}" class="card-link relative" id="${json.data[version].id}"><h3>${json.data[version].displayName}</h3><p>For Minecraft ${json.data[version].gameVersions[0]} - ${json.data[version].gameVersions[json.data[version].gameVersions.length - 1]}</p></a>`;
+                        versionsGrid += `<a target="_blank" href="https://curseforge.com/minecraft/modpacks/${displayName}/files/${json.data[version].id}" class="card-link relative" id="${json.data[version].id}"><h3>${json.data[version].displayName}</h3><p>For Minecraft ${json.data[version].gameVersions[0]} - ${json.data[version].gameVersions[json.data[version].gameVersions.length - 1]}</p></a>`;
                     }
                     foundFirstRelease = true;
                 }
