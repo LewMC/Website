@@ -78,7 +78,9 @@
                 </p>
             </div>
         </main>
-        <script src="/Assets/JS/Asset.js"></script>
+        <script src="/Assets/JS/ModrinthAPI.js"></script>
+        <script src="/Assets/JS/Converters.js"></script>
+        <script src="/Assets/JS/Tab.js"></script>
         <script>
             <?php if ($asset->main_remote == 'modrinth') { ?>
             getModrinthDescription('<?= $asset->remote_id->modrinth; ?>');
