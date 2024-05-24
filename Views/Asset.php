@@ -26,6 +26,7 @@
                 <div class="pt-2">
                     <h1><?= $asset->name; ?></h1>
                     <p class="self-center pt-2">Minecraft <span id="versions"><i class="fa-solid fa-spinner fa-spin-pulse"></i></p>
+                    <p class="self-center pt-2"><span id="downloads"><i class="fa-solid fa-spinner fa-spin-pulse"></i> Downloads</p>
                 </div>
             </div>
         </header>
@@ -62,6 +63,7 @@
         <script>let fetchedVersions = false;</script>
         <script src="/Assets/JS/ModrinthAPI.js"></script>
         <script src="/Assets/JS/CurseForgeAPI.js"></script>
+        <script src="/Assets/JS/LewMCAPI.js"></script>
         <script src="/Assets/JS/Converters.js"></script>
         <script src="/Assets/JS/Tab.js"></script>
         <script>
@@ -79,6 +81,8 @@
                 getCurseForgeVersions('<?= $asset->remote_id->curseforge; ?>','<?= $asset->name; ?>');
                 <?php } ?>
             }
+
+            getDownloadCount('<?= $asset; ?>','downloads')
         </script>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
     </body>
