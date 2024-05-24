@@ -6,7 +6,8 @@
       "modrinth": "essence-plugin",
       "hangar": "essence"
     },
-    "main_remote": "modrinth"
+    "main_remote": "modrinth",
+    "wiki_category": "Essence"
   },
   "kryptonite": {
     "name": "Kryptonite",
@@ -15,7 +16,8 @@
       "modrinth": "kryptonite",
       "hangar": "kryptonite"
     },
-    "main_remote": "modrinth"
+    "main_remote": "modrinth",
+    "wiki_category": "Kryptonite"
   },
   "galactica": {
     "name": "Galactica",
@@ -23,7 +25,8 @@
     "remote_id": {
       "curseforge": "?"
     },
-    "main_remote": "curseforge"
+    "main_remote": "curseforge",
+    "wiki_category": "Galactica"
   },
   "lews-jurassic-pack": {
     "name": "Lew's Jurassic Pack",
@@ -31,6 +34,7 @@
     "remote_id": {
       "curseforge": "?"
     },
-    "main_remote": "curseforge"
+    "main_remote": "curseforge",
+    "wiki_category": "Lew%27s_Jurassic_Pack"
   }
 }

@@ -33,7 +33,7 @@
         <nav class="asset-nav">
             <button id="overview-btn" class="asset-nav-btn-active asset-nav-btn" onclick="toggleTab('overview')">Overview</button>
             <button id="download-btn" class="asset-nav-btn" onclick="toggleTab('download'); getVersions();">Download</button>
-            <a class="asset-nav-btn" href="https://wiki.lewmc.net/index.php/Category:Kryptonite" target="_blank">
+            <a class="asset-nav-btn" href="https://wiki.lewmc.net/index.php/Category:<?= $asset->wiki_category; ?>" target="_blank">
                 Wiki
                 <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
             </a>
