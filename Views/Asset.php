@@ -6,6 +6,8 @@
         header('Location: /404');
         exit;
     }
+
+    $main_remote = $asset->main_remote;
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
@@ -95,7 +97,7 @@
         </main>
         <script src="/Assets/JS/Asset.js"></script>
         <script>
-            callAPI(<?= $asset->main_remote; ?>);
+            callAPI('<?= $asset->main_remote; ?>?description=<?= $asset->remote_id->$main_remote; ?>');
         </script>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
     </body>
