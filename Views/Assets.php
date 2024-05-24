@@ -33,6 +33,7 @@ var_dump($assets,$asset_type);
 
             <div class="grid gap-2">
                 <?php foreach ($assets as $asset) {
+                    var_dump($asset);
                     if ($asset->type == $asset_type) {
                         echo '1';
                     }
