@@ -33,8 +33,8 @@ $Router->route('/mod', '/Views/Assets.php');
 $Router->route('/server', '/Views/Assets.php');
 
 // API
-$Router->route('/api/hangar', '/API/Hangar.php');
 $Router->route('/api/modrinth', '/API/Modrinth.php');
+$Router->route('/api/curseforge', '/API/CurseForge.php');
 
 // Other
 $Router->route('/', '/Views/Homepage.php');
