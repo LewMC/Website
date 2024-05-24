@@ -12,6 +12,7 @@ $HTTPS->RedirectToHTTPS();
 $Router = new Router();
 
 // Plugins
+$Router->route('/plugin', '/Views/Assets.php');
 $Router->route('/plugin/essence', '/Views/Asset.php');
 $Router->route('/plugin/kryptonite', '/Views/Asset.php');
 
