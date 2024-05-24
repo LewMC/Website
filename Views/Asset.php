@@ -25,7 +25,7 @@
                 <img src="" alt="<?= $asset->name; ?>" class="w-32" id="icon">
                 <div class="pt-2">
                     <h1"><?= $asset->name; ?></h1>
-                    <p class="self-center pt-2">Minecraft <span id="versions"></p>
+                    <p class="self-center pt-2">Minecraft <span id="versions"><i class="fa-solid fa-spinner fa-spin-pulse"></i></p>
                 </div>
             </div>
         </header>
@@ -44,10 +44,12 @@
 
             <div id="overview" class="">
                 <p class="py-2" id="body">
+                    <i class="fa-solid fa-spinner fa-spin-pulse"></i>
                 </p>
             </div>
 
             <div id="download" class="hidden grid gap-2">
+                <i class="fa-solid fa-spinner fa-spin-pulse"></i>
             </div>
 
             <div id="license" class="hidden">
