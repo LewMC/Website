@@ -32,7 +32,7 @@
 
         <nav class="asset-nav">
             <button id="overview-btn" class="asset-nav-btn-active asset-nav-btn" onclick="toggleTab('overview')">Overview</button>
-            <button id="download-btn" class="asset-nav-btn" onclick="toggleTab('download')">Download</button>
+            <button id="download-btn" class="asset-nav-btn" onclick="toggleTab('download'); getVersions();">Download</button>
             <a class="asset-nav-btn" href="https://wiki.lewmc.net/index.php/Category:Kryptonite" target="_blank">
                 Wiki
                 <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
@@ -48,8 +48,6 @@
             </div>
 
             <div id="download" class="hidden">
-                <h2 class="text-size-md pb-4">Download</h2>
-
                 <h3 class="text-size-sm pt-4 pb-2">Plugin</h3>
                 <p class="py-2">
                     The plugin can be installed on any Spigot supported servers such as SpigotMC, PaperMC, etc.
@@ -85,6 +83,12 @@
             <?php if ($asset->main_remote == 'modrinth') { ?>
             getModrinthDescription('<?= $asset->remote_id->modrinth; ?>');
             <?php } ?>
+
+            function getVersions() {
+                <?php if ($asset->main_remote == 'modrinth') { ?>
+                getModrinthVersions('<?= $asset->remote_id->modrinth; ?>');
+                <?php } ?>
+            }
         </script>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
     </body>

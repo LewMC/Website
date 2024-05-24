@@ -11,6 +11,16 @@ function getModrinthDescription(asset) {
         .catch((error) => console.error(error));
 }
 
+function getModrinthVersions(asset) {
+    fetch('https://api.modrinth.com/v2/project/'+asset+'/version')
+        .then((response) => response.text())
+        .then((result) => {
+            console.log(result)
+            let json = JSON.parse(result);
+        })
+        .catch((error) => console.error(error));
+}
+
 /*
  *   DISCLAIMER: The below function was written using AI.
  *   I don't understand regex :(
