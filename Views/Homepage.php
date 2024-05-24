@@ -15,7 +15,7 @@
             style="background-image: url('/Assets/Images/pixels.webp');"
         >
             <div class="card">
-                <h1>Welcome to LewMC</h1>
+                <h1 class="text-center">Welcome to LewMC</h1>
             </div>
 
             <div class="grid md:grid-cols-3 gap-2">

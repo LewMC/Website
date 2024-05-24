@@ -684,6 +684,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .italic {
   font-style: italic;
 }
