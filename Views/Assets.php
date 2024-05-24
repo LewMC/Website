@@ -41,7 +41,7 @@ if ($assets == null) {
                         ?>
                         <a href="<?= $url; ?>/<?= $slug; ?>" class="card-link">
                             <h3><?= $asset->name; ?></h3>
-                            <?= $downloads->data->total; ?>Downloads
+                            <?= $downloads->data->total; ?> Downloads
                         </a>
                     <?php }
                 } ?>
