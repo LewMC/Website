@@ -1,5 +1,5 @@
 function getCurseForgeOverview(asset) {
-    fetch('/api/curseforge?description='+ asset)
+    fetch('/api/curseforge?overview='+ asset)
         .then((response) => response.text())
         .then((result) => {
             let json = JSON.parse(result);
