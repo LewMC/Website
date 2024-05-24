@@ -4,6 +4,7 @@ $url = htmlspecialchars($_SERVER['REQUEST_URI']);
 if ($url == "/plugin") { $asset_type = 'Plugins'; }
 elseif ($url == "/modpack") { $asset_type = 'Modpacks'; }
 elseif ($url == "/mod") { $asset_type = 'Mods'; }
+elseif ($url == "/server") { $asset_type = 'Servers'; }
 else { header('Location: /404'); exit; }
 
 $assets = json_decode(file_get_contents(__DIR__ . "/../Assets.json"));
