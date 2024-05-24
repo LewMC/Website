@@ -93,6 +93,10 @@
                 </p>
             </div>
         </main>
+        <script src="/Assets/JS/Asset.js"></script>
+        <script>
+            callAPI(<?= $asset->main_remote; ?>);
+        </script>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
     </body>
 </html>

@@ -4,15 +4,19 @@
     "type": "Plugins",
     "icon": "",
     "remote_id": {
+      "modrinth": "essence-plugin",
       "hangar": "essence"
-    }
+    },
+    "main_remote": "modrinth"
   },
   "kryptonite": {
     "name": "Kryptonite",
     "type": "Plugins",
     "icon": "",
     "remote_id": {
+      "modrinth": "kryptonite",
       "hangar": "kryptonite"
-    }
+    },
+    "main_remote": "modrinth"
   }
 }

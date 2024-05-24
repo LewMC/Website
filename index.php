@@ -17,5 +17,6 @@ $Router->route('/plugin/kryptonite', '/Views/Asset.php');
 
 // API
 $Router->route('/api/hangar', '/API/Hangar.php');
+$Router->route('/api/modrinth', '/API/Modrinth.php');
 
 echo 'Error 404';
