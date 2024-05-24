@@ -23,7 +23,7 @@ function getModrinthVersions(asset) {
                 for (let version in json) {
                     console.log(json[version]);
                     if (json[version].status === "listed") {
-                        versionsGrid += `<div class="card">${json[version].version_number}</div>`;
+                        versionsGrid += `<div class="card" id="${json[version].version_number}"><h3>${json[version].name}</h3><p>For Minecraft ${json[version].game_versions[0]} - ${json[version].game_versions[json[version].game_versions.length-1]}</p></div>`;
                     }
                 }
                 document.getElementById('download').innerHTML = versionsGrid;
