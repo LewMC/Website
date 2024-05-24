@@ -1034,10 +1034,24 @@ body {
   line-height: 1.75rem;
 }
 
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 h2 {
@@ -1048,6 +1062,13 @@ h2 {
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 h3 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1056,12 +1077,26 @@ h3 {
   font-weight: 700;
 }
 
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 h4, h5, h6 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
   font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  h4, h5, h6 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 p {
