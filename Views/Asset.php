@@ -31,7 +31,7 @@
         </header>
 
         <main class="padding">
-            <nav class="pb-10 product-nav">
+            <nav class="pb-10 asset-nav">
                 <button id="overview-btn" class="asset-nav-btn-active asset-nav-btn" onclick="toggleTab('overview')">Overview</button>
                 <button id="download-btn" class="asset-nav-btn" onclick="toggleTab('download')">Download</button>
                 <a class="asset-nav-btn" href="https://wiki.lewmc.net/index.php/Category:Kryptonite" target="_blank">
