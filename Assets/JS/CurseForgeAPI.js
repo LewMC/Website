@@ -5,7 +5,7 @@ function getCurseForgeDescription(asset) {
             console.log(result);
             let json = JSON.parse(result);
             document.getElementById('icon').src = json.data.logo.url;
-            document.getElementById('versions').innerHTML = json.game_versions[0]+' - '+json.game_versions[json.game_versions.length - 1];
+            document.getElementById('versions').innerHTML = json.sortableGameVersions[0].gameVersion+' - '+json.sortableGameVersions[json.game_versions.length - 1].gameVersion;
             document.getElementById('body').innerHTML = markdownToHTML(json.body);
         })
         .catch((error) => console.error(error));
