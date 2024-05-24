@@ -18,7 +18,7 @@
                 <h1 class="text-center">Welcome to LewMC</h1>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-2">
+            <div class="grid md:grid-cols-3 gap-2 text-center">
                 <div class="card">
                     <h2>4</h2>
                     <p><strong>Modpacks</strong></p>
