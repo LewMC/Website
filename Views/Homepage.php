@@ -14,9 +14,7 @@
             class="padding bg-cover bg-no-repeat bg-center grid gap-2 sm:gap-4 md:gap-8 lg:gap-16"
             style="background-image: url('/Assets/Images/pixels.webp');"
         >
-            <div class="card">
-                <h1 class="text-center">Welcome to LewMC</h1>
-            </div>
+            <img src="https://brand.pixelset.dev/lewmc/logo.png" alt="LewMC" class="w-1/2 mx-auto" />
 
             <div class="grid md:grid-cols-3 gap-2 text-center">
                 <div class="card">
