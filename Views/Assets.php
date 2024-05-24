@@ -1,5 +1,5 @@
 <?php
-$asset_type = htmlspecialchars(explode('/',$_SERVER['REQUEST_URI'])[0]);
+$asset_type = htmlspecialchars($_SERVER['REQUEST_URI'][0]);
 $assets = json_decode(file_get_contents(__DIR__ . "/../Assets.json"));
 
 if ($assets == null) {
