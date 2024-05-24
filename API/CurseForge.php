@@ -48,7 +48,7 @@ if (isset($_GET['overview'])) {
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://api.curseforge.com/v1/mods/'.htmlspecialchars($_GET['description']).'/files',
+        CURLOPT_URL => 'https://api.curseforge.com/v1/mods/'.htmlspecialchars($_GET['versions']).'/files',
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
