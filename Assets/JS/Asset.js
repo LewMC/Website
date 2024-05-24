@@ -15,7 +15,7 @@ const markdownToHTML = (text) => {
     // Convert headings
     const headingPattern = /^(#{1,6})\s+(.*)$/gm;
     text = text.replace(headingPattern, (match, hashes, content) => {
-        const level = hashes.length - 2; // Adjust heading level
+        const level = Math.min(hashes.length - 2, 4); // Adjust heading level, capped at 4
         return `<h${level > 0 ? level : 1}>${content}</h${level > 0 ? level : 1}>`; // Ensure minimum heading level is 1
     });
 
