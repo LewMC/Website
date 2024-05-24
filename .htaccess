@@ -18,6 +18,8 @@ Redirect /mods /mod
 Redirect /modpacks /modpack
 Redirect /plugins /plugin
 Redirect /servers /server
+Redirect /discord https://discord.gg/AfM396ReGj
+Redirect /wiki https://wiki.lewmc.net
 
 Redirect /essence /plugin/essence
 Redirect /kryptonite /plugin/kryptonite

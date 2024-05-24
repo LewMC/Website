@@ -32,6 +32,7 @@ $Router->route('/api/hangar', '/API/Hangar.php');
 $Router->route('/api/modrinth', '/API/Modrinth.php');
 
 // Other
+$Router->route('/', '/Views/Homepage.php');
 $Router->route('/discontinued', '/Views/Discontinued.php');
 
 echo 'Error 404';
