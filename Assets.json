@@ -2,7 +2,6 @@
   "essence": {
     "name": "Essence",
     "type": "Plugins",
-    "icon": "",
     "remote_id": {
       "modrinth": "essence-plugin",
       "hangar": "essence"
@@ -12,7 +11,6 @@
   "kryptonite": {
     "name": "Kryptonite",
     "type": "Plugins",
-    "icon": "",
     "remote_id": {
       "modrinth": "kryptonite",
       "hangar": "kryptonite"
