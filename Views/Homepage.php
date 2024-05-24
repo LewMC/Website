@@ -11,7 +11,7 @@
     <?php require __DIR__ . '/Common/Nav.php'; ?>
 
         <main
-            class="padding bg-cover bg-no-repeat bg-center grid gap-2 sm:gap-4 md:gap-8 lg:gap-16 min-h-screen"
+            class="padding bg-cover bg-no-repeat bg-center grid gap-2 sm:gap-4 md:gap-8 lg:gap-16"
             style="background-image: url('/Assets/Images/pixels.webp');"
         >
             <div class="card">
