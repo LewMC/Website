@@ -964,6 +964,15 @@ nav {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 body {
   font-size: 1.125rem;
   line-height: 1.75rem;

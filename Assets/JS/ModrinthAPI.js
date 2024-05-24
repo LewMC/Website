@@ -22,7 +22,9 @@ function getModrinthVersions(asset) {
                 let versionsGrid = '';
                 for (let version in json) {
                     console.log(json[version]);
-                    versionsGrid += `<p>${items[i]}</p>`;
+                    if (json[version].status === "listed") {
+                        versionsGrid += `<div class="card">${json[version].version_number}</div>`;
+                    }
                 }
                 document.getElementById('download').innerHTML = versionsGrid;
             })
