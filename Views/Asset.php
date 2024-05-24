@@ -22,7 +22,7 @@
                 <img src="/Assets/Images/pixels.webp" class="h-48 w-full object-cover" alt="Banner Image">
             </div>
             <div class="flex space-x-8 padding">
-                <img src="" alt="<?= $asset->name; ?>" class="w-32" id="icon">
+                <img src="" alt="<?= $asset->name; ?>" class="w-32 bg-neutral-500" id="icon">
                 <div class="pt-2">
                     <h1"><?= $asset->name; ?></h1>
                     <p class="self-center pt-2">Minecraft <span id="versions"><i class="fa-solid fa-spinner fa-spin-pulse"></i></p>
