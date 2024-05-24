@@ -1,7 +1,6 @@
 <?php
     $assetURL = explode('/', $_SERVER['REQUEST_URI'])[2];
     $asset = json_decode(file_get_contents(__DIR__ . "/../Assets.json"))->$assetURL;
-    var_dump($assetURL, $asset);
 
     if ($asset == null) {
         header('Location: /404');
