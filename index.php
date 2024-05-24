@@ -4,6 +4,7 @@ use Starlight\HTTP\HTTPS;
 use Starlight\HTTP\Router;
 
 require_once __DIR__ . '/starlight/HTTP/Router.php';
+require_once __DIR__ . '/starlight/HTTP/HTTPS.php';
 
 $HTTPS = new HTTPS();
 $HTTPS->RedirectToHTTPS();
