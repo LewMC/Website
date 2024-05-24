@@ -1,5 +1,10 @@
 <?php
 $asset_type = htmlspecialchars($_SERVER['REQUEST_URI']);
+
+if ($asset_type == "/plugin") { $asset_type = 'Plugins'; }
+if ($asset_type == "/modpack") { $asset_type = 'Modpacks'; }
+if ($asset_type == "/mod") { $asset_type = 'Mods'; }
+
 $assets = json_decode(file_get_contents(__DIR__ . "/../Assets.json"));
 
 if ($assets == null) {
