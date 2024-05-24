@@ -53,6 +53,10 @@
                 writing it has over 350 downloads.
             </p>
             <p>
+                Around this time, our websites and APIs also got a major rewrite and became fancy - the website you're
+                on now is one of them! services.lewmc.net was created, and files.lewmc.net was killed.
+            </p>
+            <p>
                 Then came Kryptonite, another plugin designed to optimise Minecraft servers. This project was made when
                 I found myself becoming incredibly bored with doing exactly that. So, instead of actually sorting my
                 servers I procrastinated and made a system that would do it for me - and now you can use it too!
