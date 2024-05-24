@@ -1,3 +1,5 @@
+let fetchedVersions = false;
+
 function getModrinthDescription(asset) {
     fetch('/api/modrinth?description='+ asset)
         .then((response) => response.text())
@@ -12,13 +14,16 @@ function getModrinthDescription(asset) {
 }
 
 function getModrinthVersions(asset) {
-    fetch('https://api.modrinth.com/v2/project/'+asset+'/version')
-        .then((response) => response.text())
-        .then((result) => {
-            console.log(result)
-            let json = JSON.parse(result);
-        })
-        .catch((error) => console.error(error));
+    if (fetchedVersions === false) {
+        fetch('https://api.modrinth.com/v2/project/' + asset + '/version')
+            .then((response) => response.text())
+            .then((result) => {
+                console.log(result)
+                let json = JSON.parse(result);
+                fetchedVersions = true;
+            })
+            .catch((error) => console.error(error));
+    }
 }
 
 /*
