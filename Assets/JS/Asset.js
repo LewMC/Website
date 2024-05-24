@@ -27,5 +27,19 @@ const markdownToHTML = (text) => {
     const italicPattern = /__(.*?)__/g;
     text = text.replace(italicPattern, '<em>$1</em>');
 
+    // Convert bullet points
+    const bulletPattern = /^\* (.*)$/gm;
+    text = text.replace(bulletPattern, '<li>$1</li>');
+
+    // Wrap bullet points in <ul> tags
+    const listPattern = /(<li>.*<\/li>)/g;
+    text = text.replace(listPattern, '<ul>$1</ul>');
+
+    // Convert single newlines to <br> for line breaks
+    text = text.replace(/\n/g, '<br>');
+
+    // Convert multiple <ul> tags to a single <ul> block
+    text = text.replace(/<\/ul><br><ul>/g, '');
+
     return text;
 };
