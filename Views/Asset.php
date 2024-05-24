@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+    $asset = explode($_SERVER['REQUEST_URI'], '/')[1];
+    $asset = json_decode(file_get_contents("/Assets.json"))->$asset;
+    var_dump($asset);
+?><!DOCTYPE html>
 <html lang="en">
     <head>
         <?php require __DIR__ . '/Common/Head.php'; ?>

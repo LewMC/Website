@@ -1,0 +1,16 @@
+{
+  "essence": {
+    "name": "Essence",
+    "type": 3,
+    "remote_id": {
+      "hangar": "essence"
+    }
+  },
+  "kryptonite": {
+    "name": "Kryptonite",
+    "type": 3,
+    "remote_id": {
+      "hangar": "kryptonite"
+    }
+  }
+}
