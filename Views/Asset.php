@@ -57,6 +57,7 @@
                 </p>
             </div>
         </main>
+        <script>let fetchedVersions = false;</script>
         <script src="/Assets/JS/ModrinthAPI.js"></script>
         <script src="/Assets/JS/CurseForgeAPI.js"></script>
         <script src="/Assets/JS/Converters.js"></script>

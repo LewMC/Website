@@ -1,5 +1,3 @@
-let fetchedVersions = false;
-
 function getModrinthDescription(asset) {
     fetch('/api/modrinth?description='+ asset)
         .then((response) => response.text())

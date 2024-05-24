@@ -1,5 +1,3 @@
-let fetchedVersions = false;
-
 function getCurseForgeDescription(asset) {
     fetch('/api/curseforge?description='+ asset)
         .then((response) => response.text())
