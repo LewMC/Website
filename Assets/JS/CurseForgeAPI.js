@@ -24,8 +24,8 @@ function getCurseForgeVersions(asset) {
         fetch('/api/curseforge?versions='+ asset)
             .then((response) => response.text())
             .then((result) => {
+                console.log(result);
                 let json = JSON.parse(result);
-                console.log(json);
                 fetchedVersions = true;
                 let versionsGrid = '';
                 let foundFirstRelease = false;
