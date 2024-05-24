@@ -39,12 +39,15 @@ if ($assets == null) {
                 <?php foreach ($assets as $slug => $asset) {
                     if ($asset->type == $asset_type) { ?>
                         <a href="<?= $url; ?>/<?= $slug; ?>" class="card-link">
-                            <h3><?= $slug; ?></h3>
+                            <h3><?= $asset->name; ?></h3>
+                            <span id="<?= $slug; ?>-downloads"></span> Downloads
                         </a>
+                        <script>getDownloadCount(<?= $slug; ?>);</script>
                     <?php }
                 } ?>
             </div>
         </main>
+        <script src="/Assets/JS/LewMCAPI.js"></script>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
     </body>
 </html>
