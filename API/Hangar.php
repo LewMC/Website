@@ -45,13 +45,13 @@ if (isset($_GET['versions'])) {
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
         CURLOPT_CUSTOMREQUEST => 'GET',
-        CURLOPT_HTTPHEADER => array(
-            'Cookie: INGRESSCOOKIE=1716537070.501.74725.880498|fdc167dbfc81bf2d806dd1cf68553089'
-        ),
+        CURLOPT_HTTPHEADER => array(),
     ));
 
     $response = curl_exec($curl);
 
     curl_close($curl);
-    echo json_decode($response);
+    echo $response;
+} else {
+    echo '{"error":404,"message":"No endpoint selected."}';
 }
