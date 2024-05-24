@@ -3,6 +3,8 @@
     <head>
         <?php require __DIR__ . '/Common/Head.php'; ?>
 
+        <script src="/Assets/JS/LewMCAPI.js"></script>
+
         <title>LewMC</title>
     </head>
     <body>
@@ -19,18 +21,27 @@
         </header>
 
         <main class="padding">
+            <div class="grid md:grid-cols-3 gap-2">
+                <div class="card">
+                    <h2>4</h2>
+                    <p><strong>Modpacks</strong></p>
+                </div>
+                <div class="card">
+                    <h2>2</h2>
+                    <p><strong>Plugins</strong></p>
+                </div>
+                <div class="card">
+                    <h2><span id="downloads"><i class="fa-solid fa-spinner fa-spin-pulse"></i></span></h2>
+                    <p><strong>Downloads</strong></p>
+                </div>
+            </div>
+            <br><br>
             <div class="grid md:grid-cols-2 gap-2">
                 <a href="/modpack" class="card-link">
                     Modpacks
                 </a>
-                <a href="/mod" class="card-link">
-                    Mods
-                </a>
                 <a href="/plugin" class="card-link">
                     Plugins
-                </a>
-                <a href="/server" class="card-link">
-                    Servers
                 </a>
                 <a href="/news" class="card-link">
                     News
@@ -44,5 +55,6 @@
             </div>
         </main>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
+        <script>getDownloadCount('all','downloads')</script>
     </body>
 </html>
