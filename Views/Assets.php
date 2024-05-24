@@ -18,6 +18,8 @@ if ($assets == null) {
     <head>
         <?php require __DIR__ . '/Common/Head.php'; ?>
 
+        <script src="/Assets/JS/LewMCAPI.js"></script>
+
         <title><?= $asset_type; ?> - LewMC</title>
     </head>
     <body>
@@ -34,7 +36,6 @@ if ($assets == null) {
         </header>
 
         <main class="padding">
-
             <div class="grid gap-2">
                 <?php foreach ($assets as $slug => $asset) {
                     if ($asset->type == $asset_type) { ?>
@@ -42,12 +43,11 @@ if ($assets == null) {
                             <h3><?= $asset->name; ?></h3>
                             <span id="<?= $slug; ?>-downloads"></span> Downloads
                         </a>
-                        <script>getDownloadCount('<?= $slug; ?>');</script>
+                        <script>getDownloads('<?= $slug; ?>');</script>
                     <?php }
                 } ?>
             </div>
         </main>
-        <script src="/Assets/JS/LewMCAPI.js"></script>
         <?php require __DIR__ . '/Common/Footer.php'; ?>
     </body>
 </html>
