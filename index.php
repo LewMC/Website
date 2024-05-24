@@ -6,6 +6,11 @@ use Starlight\HTTP\Router;
 require_once __DIR__ . '/starlight/HTTP/Router.php';
 require_once __DIR__ . '/starlight/HTTP/HTTPS.php';
 
+if (!file_exists(__DIR__ . '/settings.php')) {
+    echo '<h1>Error 503</h1><p>The server is temporarily unavailable.</p><p><sub>Error: Missing settings.php</sub></p>';
+    exit;
+}
+
 $HTTPS = new HTTPS();
 $HTTPS->RedirectToHTTPS();
 
