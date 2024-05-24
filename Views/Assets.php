@@ -3,9 +3,11 @@ $asset_type = htmlspecialchars(explode('/',$_SERVER['REQUEST_URI'])[0]);
 $assets = json_decode(file_get_contents(__DIR__ . "/../Assets.json"));
 
 if ($assets == null) {
-header('Location: /404');
-exit;
+    header('Location: /404');
+    exit;
 }
+
+var_dump($assets,$asset_type);
 
 ?><!DOCTYPE html>
 <html lang="en">
