@@ -7,6 +7,7 @@ function getModrinthDescription(asset) {
             document.getElementById('icon').src = json.icon_url;
             document.getElementById('versions').innerHTML = json.game_versions[0]+' - '+json.game_versions[json.game_versions.length - 1];
             json.body = json.body.replace(new RegExp('\r?\n','g'), '<br>');
+            json.body = json.body.replace(new RegExp('\\*\\*(.*?)\\*\\*', 'g'), '<strong>$1</strong>');
             document.getElementById('body').innerHTML = json.body.replace(new RegExp('\\*','g'), '-');
         })
         .catch((error) => console.error(error));
