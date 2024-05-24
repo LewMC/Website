@@ -20,7 +20,7 @@ function getModrinthVersions(asset) {
                 let json = JSON.parse(result);
                 fetchedVersions = true;
                 for (let version in json) {
-                    console.log(version);
+                    console.log(json[version]);
                 }
             })
             .catch((error) => console.error(error));
