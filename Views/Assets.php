@@ -1,9 +1,10 @@
 <?php
-$asset_type = htmlspecialchars($_SERVER['REQUEST_URI']);
+$url = htmlspecialchars($_SERVER['REQUEST_URI']);
 
-if ($asset_type == "/plugin") { $asset_type = 'Plugins'; }
-if ($asset_type == "/modpack") { $asset_type = 'Modpacks'; }
-if ($asset_type == "/mod") { $asset_type = 'Mods'; }
+if ($url == "/plugin") { $asset_type = 'Plugins'; }
+elseif ($url == "/modpack") { $asset_type = 'Modpacks'; }
+elseif ($url == "/mod") { $asset_type = 'Mods'; }
+else { header('Location: /404'); exit; }
 
 $assets = json_decode(file_get_contents(__DIR__ . "/../Assets.json"));
 
@@ -12,14 +13,12 @@ if ($assets == null) {
     exit;
 }
 
-var_dump($assets,$asset_type);
-
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
         <?php require __DIR__ . '/Common/Head.php'; ?>
 
-        <title><?= ucfirst($asset_type); ?> - LewMC</title>
+        <title><?= $asset_type; ?> - LewMC</title>
     </head>
     <body>
     <?php require __DIR__ . '/Common/Nav.php'; ?>
@@ -37,11 +36,12 @@ var_dump($assets,$asset_type);
         <main class="padding">
 
             <div class="grid gap-2">
-                <?php foreach ($assets as $asset) {
-                    var_dump($asset);
-                    if ($asset->type == $asset_type) {
-                        echo '1';
-                    }
+                <?php foreach ($assets as $slug => $asset) {
+                    if ($asset->type == $asset_type) { ?>
+                        <a href="<?= $url; ?>/<?= $slug; ?>" class="card-link">
+                            <h3><?= $slug; ?></h3>
+                        </a>
+                    <?php }
                 } ?>
             </div>
         </main>
