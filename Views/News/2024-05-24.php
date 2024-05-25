@@ -26,7 +26,7 @@
                 I'm hugely grateful to everyone who has played on any of our modpacks, or used any of our plugins. This
                 is a number I could only have dreamed of when I first started LewMC.
             </p>
-            <h2 class="ph">The history of LewMC</h2>
+            <h2 class="ph">Looking back.</h2>
             <p>
                 LewMC was first "kind of" a thing in 2020 when I made the Galactica modpack for me and my friends. I
                 used to love playing Tekkit and other Technic Launcher packs, but found myself wanting it on a more
@@ -61,7 +61,7 @@
                 I found myself becoming incredibly bored with doing exactly that. So, instead of actually sorting my
                 servers I procrastinated and made a system that would do it for me - and now you can use it too!
             </p>
-            <h2 class="ph">Thank you</h2>
+            <h2 class="ph">Thank you!</h2>
             <p>
                 So thank you, it's been a wild ride these past four years, but it's been very fun. Here's to the next
                 10,000 downloads! Thank you so much.
